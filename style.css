@@ -1,0 +1,83 @@
+/**
+Theme Name: Astra Child
+Author: Brainstorm Force
+Author URI: http://wpastra.com/about/
+Description: Astra is the fastest, fully customizable & beautiful theme suitable for blogs, personal portfolios and business websites. It is very lightweight (less than 50KB on frontend) and offers unparalleled speed. Built with SEO in mind, Astra comes with schema.org code integrated so search engines will love your site. Astra offers plenty of sidebar options and widget areas giving you a full control for customizations. Furthermore, we have included special features and templates so feel free to choose any of your favorite page builder plugin to create pages flexibly. Some of the other features: # WooCommerce Ready # Responsive # Compatible with major plugins # Translation Ready # Extendible with premium addons # Regularly updated # Designed, Developed, Maintained & Supported by Brainstorm Force. Looking for a perfect base theme? Look no further. Astra is fast, fully customizable and beautiful theme!
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: astra-child
+Template: astra
+*/
+
+
+/* NAV CUSTOM STYLES: BEGIN */
+.current-menu-item.current_page_item a{
+    pointer-events: none;
+}
+.ast-desktop .ast-menu-hover-style-underline > .current-menu-item.current_page_item > .menu-link:before{
+    background-color: white!important;
+    width: calc(100% - 1.2em);
+    transform: scale(1,1) translate(50%,0);
+}
+.menu-item, .menu-link{
+    color: var(--ast-global-color-4)!important;
+}
+/* NAV CUSTOM STYLES: END */
+
+/* CONTACT FORM CUSTOM STYLES: BEGIN */
+.wpforms-field-container, .wpforms-container .wpforms-required-label, .wpforms-container label.wpforms-error, .wpforms-confirmation-container.wpforms-confirmation-scroll{
+    color: white;
+}
+.wpforms-submit, [data-id="44e94bf"] .wpforms-submit{
+    transition: background-color ease .3s;
+}
+.wpforms-submit:hover{
+    background-color: white;
+    color: var( --e-global-color-astglobalcolor0 );
+}
+[data-id="44e94bf"] .wpforms-submit:hover{
+    background-color: var(--ast-global-color-0);
+    color: white;
+}
+[data-id="44e94bf"] .wpforms-field-container, 
+[data-id="44e94bf"] .wpforms-container .wpforms-required-label, 
+[data-id="44e94bf"] .wpforms-container label.wpforms-error{
+    color: var(--ast-global-color-0);
+}
+/* CONTACT FORM CUSTOM STYLES: END */
+
+/* BUTTONS CUSTOM STYLES: BEGIN */
+#mob-btn:hover{
+    cursor: default;
+}
+#email-btn{
+    display: block;
+}
+.bi.bi-arrow-right{
+    order: 20;
+    margin-left: 10px;
+}
+.elementor-button-wrapper .elementor-button.view-all:hover{
+    background-color: var( --e-global-color-astglobalcolor0 );
+}
+/* BUTTONS CUSTOM STYLES: END */
+
+/* FOOTER CUSTOM STYLES: BEGIN */
+.site-below-footer-wrap[data-section="section-below-footer-builder"] {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 0;
+}
+/* FOOTER CUSTOM STYLES: END */
+
+/* PRODUCT CATEGORY CUSTOM STYLES: BEGIN */
+.ast-woo-product-category, .single-product-category, .product_meta .posted_in, .ast-shipping-text{
+    display: none!important;
+}
+/* PRODUCT CATEGORY CUSTOM STYLES: END */
+
+/* SINGLE PRODUCT PAGE CUSTOM STYLES: BEGIN */
+.woocommerce div.product {
+    padding-top: 2rem;
+}
